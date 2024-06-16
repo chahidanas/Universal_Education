@@ -1,1 +1,16 @@
 .env
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv
+*.log
+*.pid
+*.pyo
+*.pyd
+*.swp
+.vscode/
+*.swo
+*.bak
+*.orig
+docker-compose.override.yml
