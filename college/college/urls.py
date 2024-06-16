@@ -1,5 +1,5 @@
 """
-URL configuration for univedu project.
+URL configuration for college project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,14 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import YourModelViewSet
-
-router = DefaultRouter()
-router.register(r'yourmodel', YourModelViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('Universal_Education/univedu/college', include('college.urls')),
-    path('api/', include(router.urls)),
+    path('api/', include('users.url')),
 ]
