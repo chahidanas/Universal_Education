@@ -1,4 +1,4 @@
-# Use an official Python runtime as a parent image
+# Official Python runtime as a parent image
 FROM python:3.12
 
 # Set environment variables
